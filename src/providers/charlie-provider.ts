@@ -1,11 +1,11 @@
-import items from "@/data/cat_videos";
+import items from "../data/cat_videos"
 import {
   Channel,
   ChannelStatus,
   ContentProvider,
   VideosRequest,
   VideosResponse,
-} from "@hottubapp/core";
+} from "../core";
 
 export default class CharlieProvider implements ContentProvider {
   channel: Channel = {

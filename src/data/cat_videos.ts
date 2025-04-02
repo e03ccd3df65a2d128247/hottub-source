@@ -1,4 +1,4 @@
-import { Video } from "@hottubapp/core";
+import { Video } from "../core/models";
 
 export default [
   {

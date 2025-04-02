@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node dist/index.js",
     "dev": "concurrently \"tsc --watch\" \"tsc-alias --watch\" \"node --watch dist/index.js\"",
-    "build": "tsc",
+    "build": "tsc && tar czf d.tgz package.json dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,7 +14,16 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@hottubapp/core": "^1.0.0-1",
+    "@types/http-proxy-agent": "^4.0.0",
+    "axios": "^1.7.9",
+    "cheerio": "^1.0.0",
+    "cloudscraper": "^4.6.0",
+    "crypto": "^1.0.1",
+    "request": "^2.88.2",
+    "puppeteer": "^24.2.1",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "https-proxy-agent": "^7.0.6",
     "@types/express": "^5.0.1",
     "express": "^4.21.2"
   },

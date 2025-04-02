@@ -2,11 +2,28 @@
 
 This is a mock server for the Hot Tub app. It is used to mock the API responses for the app.
 
-## Running the server
+## Running the server for dev
 
 ```bash
 npm install
 npm run dev
+```
+
+## Running the server for production
+
+```bash
+npm install
+npm run build
+
+# deploy to your server
+# scp -r dist package.json <your server>
+
+# on your server
+npm install
+npm start
+
+# the source is ready at http://your-server:3000
+# do not forget configure your firewall to allow network traffic to pass through port 3000
 ```
 
 ## API Endpoints
